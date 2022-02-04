@@ -75,11 +75,11 @@ echo "Installing packages..."
 # 	clear
 
 
-echo "Create directory..."
-	sleep 3s
-	    cd ~ && mkdir GitHub
-	
-	clear
+#echo "Create directory..."
+#	sleep 3s
+#	    cd ~ && mkdir GitHub
+#	
+#	clear
 
 
 # echo "Installing AUR helper"
