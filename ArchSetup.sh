@@ -10,11 +10,12 @@
 	#unzip -X -K
 	# https://wiki.archlinux.org/title/MATLAB#Installing_from_the_MATLAB_installation_software
 
-#Gnome extension  and shortcut (attached dconf file, put it in home folder and execute the following line)
-	#dconf load /org/gnome/shell/extensions/ < extension-settings.dconf
+#Gnome extension  and shortcut (attached dconf file)
+	#These two lines used to export the config
 	#dconf dump '/org/gnome/desktop/wm/keybindings/' > keybindings.dconf
 	#dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > custom-keybindings.dconf
 	
+	#List of extensions
 	# user-theme@gnome-shell-extensions.gcampax.github.com
 	# sound-output-device-chooser@kgshank.net
 	# clipboard-indicator@tudmotu.com
