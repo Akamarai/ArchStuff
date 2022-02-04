@@ -11,8 +11,8 @@ Simple bash script to tune a few things after a fresh arch installation.
 #### After manually install the extension use this two line to load my shortcut and settings
 
 	dconf load /org/gnome/shell/extensions/ < extension-settings.dconf
-	dconf load '/org/gnome/desktop/wm/keybindings/' < keybindings.dconf
-	dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < custom-keybindings.dconf
+	dconf load /org/gnome/desktop/wm/keybindings/ < keybindings.dconf
+	dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ < custom-keybindings.dconf
 
 ##### To be Fixed
 In NightThemeSwitcher extension not able to add general path like  `file:///$HOME/GitHub/Pictures/89206202_p0.jpg` to set background, so you have to modify like this:
