@@ -9,7 +9,7 @@ Preview of Night-theme
 ![Screenshot from 2022-02-04 10-34-20](https://user-images.githubusercontent.com/87226280/152510144-5e2040b0-1b62-433f-8f46-5ec6d596a205.png)
 
 
-Walpaper Credit :
+Wallpaper Credit :
 
 - https://www.pixiv.net/en/users/33638616
 - https://www.pixiv.net/en/artworks/89174478
