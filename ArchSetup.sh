@@ -61,10 +61,11 @@ echo "Installing packages..."
 #Steam pkg need [multilib] repository uncommented in /etc/pacman.conf
 	sleep 2s
 		sudo sed -i 's/ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
-		sudo pacman -S baobab s-tui code \
-		wl-clipboard firefox chromium piper vlc pigz pbzip2 \
-		micro bat telegram-desktop papirus-icon-theme \
-		fragments helvum guitarix steam discord htop gnome-boxes
+		sudo pacman -S linux-zen linux-zen-headers pigz pbzip2 baobab micro s-tui htop \
+		wl-clipboard code gnome-boxes firefox chromium piper vlc bat fragments \
+		telegram-desktop papirus-icon-theme helvum guitarix steam discord
+		sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 
 	clear
 
@@ -124,7 +125,7 @@ echo "Installing AUR pkg..."
 #EndevourOS has default yay. Uncomment Paru line and change yay with paru if u want it
 	sleep 2s
 		yay -S topgrade spotify droidcam minecraft-launcher \
-		zoom gnome-shell-extension-pop-shell-git marktext \
+		zoom gnome-shell-extension-pop-shell-git marktext-bin \
 		onlyoffice papirus-folders-git gnome-text-editor \
 		whatsdesk-bin bash-pipes noisetorch timeshift chrome-gnome-shell-git \
 		nerd-fonts-complete popsicle --noconfirm
@@ -132,10 +133,6 @@ echo "Installing AUR pkg..."
 		sleep 1s 
 		papirus-folders -C yaru
 
-	#Uncomment this line if you want update your grub config
-		#sleep 1s
-		#sudo grub-mkconfig -o /boot/grub/grub.cfg
-		
 	clear
 read -p "Done! See script comment to manual install gnome extension and shortcut. Press ENTER to reboot."
 	reboot
