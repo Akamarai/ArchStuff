@@ -44,56 +44,48 @@ bypass() {
 }
 
 echo "Starting Arch Linux post-install script..."
-	sleep 3s
+	sleep 2s
 		bypass
 
 	clear
 
 
 echo "Updating system..."
-	sleep 3s
+	sleep 2s
 		sudo pacman -Syu
 
 	clear
 
 
 echo "Installing packages..."
-	sleep 3s
+#Steam pkg need [multilib] repository uncommented in /etc/pacman.conf
+	sleep 2s
 		sudo sed -i 's/ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
-		sudo pacman -S ntfs-3g baobab s-tui code \
-		wl-clipboard firefox chromium  piper vlc pigz pbzip2 git \
-		micro zsh zsh-completions bat telegram-desktop papirus-icon-theme \
-		fragments carla steam discord htop
+		sudo pacman -S baobab s-tui code \
+		wl-clipboard firefox chromium piper vlc pigz pbzip2 \
+		micro bat telegram-desktop papirus-icon-theme \
+		fragments helvum guitarix steam discord htop gnome-boxes
 
 	clear
 
-
+#Need with cups and hplip pkg if you don't use EndevourOS
 # echo "enable printing services..."
 # 	sleep 3s
 # 		systemctl enable cups && systemctl start cups 
 
 # 	clear
 
+#echo "Installing AUR helper"
+#	sleep 2s
+#		sudo pacman -S --needed base-devel
+#		cd ~/GitHub && git clone https://aur.archlinux.org/paru.git && cd paru
+#		makepkg -si
 
-#echo "Create directory..."
-#	sleep 3s
-#	    cd ~ && mkdir GitHub
-#	
 #	clear
-
-
-# echo "Installing AUR helper"
-# 	sleep 3s
-# 		sudo pacman -S --needed base-devel
-# 		cd ~/GitHub && git clone https://aur.archlinux.org/paru.git && cd paru
-# 		makepkg -si
-
-# 	clear
-		
 		
 echo "Tuning system..."
-	#USARE : sed -i 's/riga da canellare/riga da aggiungere/' path/to/file
-	sleep 3s
+#USARE : sed -i 's/riga da canellare/riga da aggiungere/' path/to/file
+	sleep 2s
 	#makepkg
 		sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j$(nproc)"/' /etc/makepkg.conf
 		sudo sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/' /etc/makepkg.conf
@@ -101,11 +93,9 @@ echo "Tuning system..."
 		sudo sed -i 's/COMPRESSBZ2=(bzip2 -c -f)/COMPRESSBZ2=(pbzip2 -c -f)/' /etc/makepkg.conf
 		sudo sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/' /etc/makepkg.conf
 	#pacman
-		#sudo sed -i 's/#Color/Color/' /etc/pacman.conf
-		#sudo sed -i '38iILoveCandy' /etc/pacman.conf
-		sudo sed -i 's/ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
-	# #paru
-	# 	sudo sed -i "/BottomUp/s/^#//g" /etc/paru.conf
+	#	sudo sed -i 's/#Color/Color/' /etc/pacman.conf
+	#paru
+	#	sudo sed -i "/BottomUp/s/^#//g" /etc/paru.conf
 	# #grub
 	# 	echo "" | sudo tee -a /etc/default/grub
 	# 	echo "#For Windows" | sudo tee -a /etc/default/grub
@@ -113,6 +103,7 @@ echo "Tuning system..."
 	#/etc/env
 	sudo sed -i 's/EDITOR=nano/	EDITOR=micro/' /etc/environment
 	echo "MOZ_ENABLE_WAYLAND=1" | sudo tee -a /etc/environment
+
 	clear
 	
 
@@ -128,16 +119,22 @@ echo "Installing GitHub Theme Files..."
 		
 	clear
 	
+
 echo "Installing AUR pkg..."
-	sleep 3s
+#EndevourOS has default yay. Uncomment Paru line and change yay with paru if u want it
+	sleep 2s
 		yay -S topgrade spotify droidcam minecraft-launcher \
 		zoom gnome-shell-extension-pop-shell-git marktext \
 		onlyoffice papirus-folders-git gnome-text-editor \
-		whatsdesk-bin cbonsai bash-pipes noisetorch timeshift chrome-gnome-shell-git \
-		nerd-fonts-complete popsicle
+		whatsdesk-bin bash-pipes noisetorch timeshift chrome-gnome-shell-git \
+		nerd-fonts-complete popsicle --noconfirm
 		
-		sleep 3s 
+		sleep 1s 
 		papirus-folders -C yaru
+
+	#Uncomment this line if you want update your grub config
+		#sleep 1s
+		#sudo grub-mkconfig -o /boot/grub/grub.cfg
 		
 	clear
 read -p "Done! See script comment to manual install gnome extension and shortcut. Press ENTER to reboot."
