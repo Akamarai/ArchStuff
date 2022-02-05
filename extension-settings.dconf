@@ -2,6 +2,7 @@
 folder-order-position='end'
 
 [app-grid-tweaks]
+appgrid-icon-size=80
 appgrid-max-columns=8
 appgrid-max-rows=6
 folder-max-columns=4
@@ -70,7 +71,7 @@ always-enable-ondemand=true
 manual-time-source=true
 nightthemeswitcher-ondemand-keybinding=['<Shift><Super>t']
 ondemand-button-placement='none'
-ondemand-time='day'
+ondemand-time='night'
 schedule-sunrise=7.0
 schedule-sunset=17.5
 time-source='schedule'
@@ -84,8 +85,8 @@ pop-monitor-left=['<Shift><Super>Left']
 pop-monitor-right=['<Shift><Super>Right']
 pop-workspace-down=['<Shift><Super>Down']
 pop-workspace-up=['<Shift><Super>Up']
-show-title=false
-tile-by-default=false
+show-title=true
+tile-by-default=true
 
 [sound-output-device-chooser]
 hide-menu-icons=false
@@ -93,4 +94,14 @@ icon-theme='colored'
 ports-settings='{"version":3,"ports":[{"human_name":"HDMI / DisplayPort","name":"hdmi-output-0","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 2","name":"hdmi-output-1","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 2 - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 3","name":"hdmi-output-2","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 3 - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 4","name":"hdmi-output-3","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 4 - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 5","name":"hdmi-output-4","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 5 - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 6","name":"hdmi-output-5","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 6 - Navi 10 HDMI Audio"}]}'
 
 [user-theme]
-name='WhiteSur-light-red'
+name='WhiteSur-dark-red'
+
+[vitals]
+fixed-widths=false
+hide-zeros=true
+hot-sensors=['_processor_average_', '_temperature_tctl_', '__temperature_avg__', '_memory_usage_']
+show-fan=false
+show-network=true
+show-storage=false
+show-system=false
+use-higher-precision=false
