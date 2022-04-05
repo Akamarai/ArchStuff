@@ -1,5 +1,5 @@
 # ArchStuff
-Simple bash script to tune a few things after a fresh arch installation.
+Simple bash script to tune a few things after a fresh arch installation. Based on EndeavourOS
 Here two line to execute it:
 ```bash
 cd $HOME 
