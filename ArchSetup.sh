@@ -59,31 +59,25 @@ echo "Updating system..."
 
 echo "Installing packages..."
 #Steam pkg need [multilib] repository uncommented in /etc/pacman.conf
+#for pure Arch add os-prober firefox
 	sleep 2s
-		sudo sed -i 's/ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
+		sudo sed -i 's/ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
 		sudo pacman -S linux-zen linux-zen-headers pigz pbzip2 baobab micro s-tui htop \
-		wl-clipboard code gnome-boxes firefox chromium piper vlc bat fragments \
-		telegram-desktop papirus-icon-theme helvum guitarix steam discord
+		wl-clipboard code gnome-boxes chromium piper vlc bat fragments \
+		telegram-desktop papirus-icon-theme helvum guitarix steam discord \
+		vlc
 		sudo grub-mkconfig -o /boot/grub/grub.cfg
-
-
 	clear
-
-#Need with cups and hplip pkg if you don't use EndevourOS
-# echo "enable printing services..."
-# 	sleep 3s
-# 		systemctl enable cups && systemctl start cups 
-
-# 	clear
 
 #echo "Installing AUR helper"
 #	sleep 2s
+#		cd
 #		sudo pacman -S --needed base-devel
 #		cd ~/GitHub && git clone https://aur.archlinux.org/paru.git && cd paru
 #		makepkg -si
+#
+#	clear		
 
-#	clear
-		
 echo "Tuning system..."
 #USARE : sed -i 's/riga da canellare/riga da aggiungere/' path/to/file
 	sleep 2s
@@ -94,24 +88,24 @@ echo "Tuning system..."
 		sudo sed -i 's/COMPRESSBZ2=(bzip2 -c -f)/COMPRESSBZ2=(pbzip2 -c -f)/' /etc/makepkg.conf
 		sudo sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/' /etc/makepkg.conf
 	#pacman
-	#	sudo sed -i 's/#Color/Color/' /etc/pacman.conf
+		#sudo sed -i 's/#Color/Color/' /etc/pacman.conf
 	#paru
-	#	sudo sed -i "/BottomUp/s/^#//g" /etc/paru.conf
+		#sudo sed -i "/BottomUp/s/^#//g" /etc/paru.conf
 	# #grub
-	# 	echo "" | sudo tee -a /etc/default/grub
-	# 	echo "#For Windows" | sudo tee -a /etc/default/grub
-	# 	echo "GRUB_DISABLE_OS_PROBER=false" | sudo tee -a /etc/default/grub	
+	 	#echo "" | sudo tee -a /etc/default/grub
+	 	#echo "#For Windows" | sudo tee -a /etc/default/grub
+	 	#echo "GRUB_DISABLE_OS_PROBER=false" | sudo tee -a /etc/default/grub
+	 	#sudo grub-mkconfig -o /boot/grub/grub.cfg	
 	#/etc/env
-	sudo sed -i 's/EDITOR=nano/	EDITOR=micro/' /etc/environment
-	echo "MOZ_ENABLE_WAYLAND=1" | sudo tee -a /etc/environment
-
+	#sudo sed -i 's/EDITOR=nano/	EDITOR=micro/' /etc/environment
+	#echo "MOZ_ENABLE_WAYLAND=1" | sudo tee -a /etc/environment
 	clear
 	
 
 echo "Installing GitHub Theme Files..."
 	sleep 1s
 		cd ~/GitHub && git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git && cd WhiteSur-gtk-theme
-		./install.sh -t red -i arch -N glassy -HD --normal
+		./install.sh -t red -i arch -N glassy -HD 
 		sudo ./tweaks.sh -g -c dark -t red
 		
 	sleep 1s
@@ -128,7 +122,7 @@ echo "Installing AUR pkg..."
 		zoom gnome-shell-extension-pop-shell-git marktext-bin \
 		onlyoffice papirus-folders-git gnome-text-editor \
 		whatsdesk-bin bash-pipes noisetorch timeshift chrome-gnome-shell-git \
-		nerd-fonts-complete popsicle --noconfirm
+		nerd-fonts-complete popsicle
 		
 		sleep 1s 
 		papirus-folders -C yaru
