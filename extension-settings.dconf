@@ -1,60 +1,250 @@
-[alphabetical-app-grid]
-folder-order-position='end'
+[EasyScreenCast]
+active-custom-gsp=false
+file-container=5
+file-name='gnome-customization-fedora_%d_%t'
+file-resolution-height=1080
+file-resolution-type=8
+file-resolution-width=1920
+fps=30
+pipeline='vp9enc min_quantizer=0 max_quantizer=5 cpu-used=3 deadline=1000000 threads=%T ! queue max-size-buffers=0 max-size-time=0 max-size-bytes=0 ! webmmux'
+quality-index=2
+quality-webcam=''
+shortcut-key=['<Shift>r']
 
-[app-grid-tweaks]
-appgrid-icon-size=80
-appgrid-max-columns=8
-appgrid-max-rows=6
-folder-max-columns=4
-folder-max-rows=4
-side-padding=32
+[aylurs-widgets]
+background-clock=false
+background-clock-bg-border-radius=0
+background-clock-bg-border-size=0
+background-clock-bg-padding=0
+background-clock-bg-shadow-inset=false
+background-clock-clock-custom-font=true
+background-clock-clock-font='Bebas Neue'
+background-clock-clock-shadow-blur=4
+background-clock-clock-shadow-color='rgb(61,56,70)'
+background-clock-clock-shadow-width=0
+background-clock-clock-shadow-x=1
+background-clock-clock-shadow-y=1
+background-clock-clock-size=84
+background-clock-color='#fffccc'
+background-clock-date-color='rgb(255,255,255)'
+background-clock-date-custom-font=true
+background-clock-date-font='Abel'
+background-clock-date-format='%A %b %Y'
+background-clock-date-shadow-blur=3
+background-clock-date-shadow-color='rgb(36,31,49)'
+background-clock-date-shadow-x=0
+background-clock-date-shadow-y=0
+background-clock-date-size=32
+background-clock-offset=40
+background-clock-other-css='text-shadow: 0 0 0 0px black'
+background-clock-position=8
+background-clock-y-offset=80
+battery-bar=true
+battery-bar-charging-color='rgb(143,240,164)'
+battery-bar-color='rgb(234,64,121)'
+battery-bar-height=31
+battery-bar-offset=0
+battery-bar-roundness=100
+battery-bar-show-icon=true
+battery-bar-show-percentage=true
+battery-bar-width=100
+dash-app-icon-size=40
+dash-apps-cols=4
+dash-apps-rows=4
+dash-board=true
+dash-button-enable=false
+dash-button-hide=false
+dash-button-icon-hide=true
+dash-button-label='  Dashboard  '
+dash-button-offset=0
+dash-button-position=0
+dash-button-show-icon=false
+dash-hide-activities=true
+dash-layout=1
+dash-link-names=['reddit', 'youtube', 'gmail', 'twitter', 'github']
+dash-link-urls=['https://www.reddit.com/', 'https://www.youtube.com/', 'https://www.gmail.com/', 'https://twitter.com/', 'https://www.github.com/']
+dash-replace-activities-button=true
+dash-shortcut=['<Super>d']
+date-menu-custom-menu=true
+date-menu-date-format='%H:%M %a:%d'
+date-menu-hide-clocks=true
+date-menu-hide-events=true
+date-menu-hide-media=false
+date-menu-hide-notifications=true
+date-menu-hide-user=false
+date-menu-hide-weather=true
+date-menu-indicator-position=0
+date-menu-mirror=false
+date-menu-mod=false
+date-menu-offset=0
+date-menu-position=1
+date-menu-remove-padding=true
+media-player=false
+media-player-controls-offset=1
+media-player-hide-controls=false
+media-player-hide-track=false
+media-player-layout=0
+media-player-max-width=260
+media-player-offset=1
+notification-indicator=true
+notification-indicator-hide-counter=false
+notification-indicator-hide-on-zero=false
+notification-indicator-menu-width=380
+notification-indicator-offset=0
+notification-indicator-position=2
+power-menu=true
+power-menu-button-roundness=16
+power-menu-dialog-spacing=14
+power-menu-icon-size=54
+power-menu-label-position=0
+power-menu-layout=1
+quick-toggles=false
+quick-toggles-hide-notifications=false
+quick-toggles-hide-system-levels=false
+quick-toggles-style=2
+workspace-indicator=true
+workspace-indicator-offset=1
+workspace-indicator-position=1
+workspace-indicator-show-names=true
 
 [blur-my-shell]
-appfolder-dialog-opacity=0.12
-blur-appfolders=false
-blur-dash=false
-blur-panel=false
-brightness=0.5
-dash-opacity=0.12
-debug=false
-hacks-level=0
-hidetopbar=false
-sigma=25
+hacks-level=3
 
-[clipboard-indicator]
-cache-only-favorites=false
-display-mode=0
-enable-keybindings=false
-history-size=30
+[blur-my-shell/applications]
+blur=true
+blur-on-overview=true
+brightness=0.41999999999999998
+customize=false
+enable-all=false
+opacity=209
+sigma=200
+whitelist=@as []
+
+[blur-my-shell/dash-to-dock]
+blur=false
+customize=false
+override-background=false
+
+[blur-my-shell/overview]
+style-components=1
+
+[blur-my-shell/panel]
+blur=false
+unblur-in-overview=false
+
+[coverflowalttab]
+hide-panel=false
 
 [dash-to-dock]
 apply-custom-theme=false
-background-opacity=0.80000000000000004
-border-radius=25
-custom-theme-shrink=true
-dash-max-icon-size=45
+background-color='rgb(0,0,0)'
+background-opacity=0.78000000000000003
+custom-background-color=false
+custom-theme-shrink=false
+dash-max-icon-size=48
+disable-overview-on-startup=false
 dock-position='BOTTOM'
-floating-margin=10
+extend-height=false
 height-fraction=0.90000000000000002
-isolate-locations=false
-multi-monitor=true
+hot-keys=false
+icon-size-fixed=false
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+middle-click-action='launch'
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
 preview-size-scale=0.0
-transparency-mode='DEFAULT'
+running-indicator-style='DOTS'
+shift-click-action='minimize'
+shift-middle-click-action='launch'
+transparency-mode='DYNAMIC'
 
-[nightthemeswitcher/backgrounds]
-day='file:///home/simone/Pictures/89174478_p0.jpg'
-enabled=true
-night='file:///home/simone/Pictures/89206202_p0.jpg'
+[dash2dock-lite]
+animation-magnify=0.40000000000000002
+animation-rise=0.59999999999999998
+animation-spread=0.5
+autohide-dash=true
+border-color=(0.0, 0.0, 0.0, 1.0)
+border-radius=6.0
+border-thickness=1
+edge-distance=0.13186813186813184
+icon-effect=0
+icon-resolution=0
+icon-size=0.21377049180327873
+monitor-count=1
+msg-to-ext=''
+notification-badge-style=0
+panel-mode=false
+peek-hidden-icons=false
+pressure-sense=false
+running-indicator-style=3
+scroll-sensitivity=0.40000000000000002
+shrink-icons=true
+topbar-border-thickness=0
+trash-icon=true
 
-[nightthemeswitcher/cursor-variants]
-day='Vimix-cursors'
-enabled=true
-night='Vimix-white-cursors'
+[gnome-ui-tune]
+hide-search=true
+increase-thumbnails-size='300%'
+overview-firefox-pip=true
+restore-thumbnails-background=true
+
+[gsconnect]
+devices=@as []
+id='2a38407e-2b61-4a8b-a24c-29ff0304de25'
+name='fedora00'
+show-indicators=false
+
+[gsconnect/device/_9b637111_1e53_48cb_a896_bc2c812aeca5_]
+incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.lock', 'kdeconnect.lock.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.photo', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony', 'kdeconnect.virtualmonitor', 'kdeconnect.virtualmonitor.request']
+last-connection='lan://192.168.100.45:1716'
+name='lsws'
+outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report.request', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.lock', 'kdeconnect.lock.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.photo.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony.request_mute', 'kdeconnect.virtualmonitor', 'kdeconnect.virtualmonitor.request']
+supported-plugins=['battery', 'clipboard', 'findmyphone', 'mousepad', 'mpris', 'notification', 'photo', 'ping', 'runcommand', 'share', 'systemvolume']
+type='desktop'
+
+[gsconnect/device/_9b637111_1e53_48cb_a896_bc2c812aeca5_/plugin/battery]
+custom-battery-notification-value=uint32 80
+
+[gsconnect/device/_9b637111_1e53_48cb_a896_bc2c812aeca5_/plugin/notification]
+applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Telegram Desktop":{"iconName":"telegram","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true}}'
+
+[gsconnect/device/_9b637111_1e53_48cb_a896_bc2c812aeca5_/plugin/share]
+receive-directory='/home/linuxscoop/Downloads'
+
+[gsconnect/preferences]
+window-maximized=false
+window-size=(693, 440)
+
+[improved-workspace-indicator]
+change-on-click=true
+panel-position='right'
+skip-taskbar-mode=true
+
+[just-perfection]
+activities-button=false
+clock-menu-position=0
+dash-icon-size=0
+panel=true
+search=false
+startup-status=0
+theme=true
+top-panel-position=0
+workspace=false
+workspace-popup=false
+workspace-switcher-should-show=false
+workspace-switcher-size=0
+workspaces-in-app-grid=false
+
+[material-you-theme]
+resize-height=100
+resize-width=100
+scheme='Expressive'
+show-notifications=false
 
 [nightthemeswitcher/gtk-variants]
-day='WhiteSur-light-red'
-manual=true
-night='WhiteSur-dark-red'
+day='Colloid-Pink-Light'
+enabled=true
+night='Colloid-Pink-Dark'
 
 [nightthemeswitcher/icon-variants]
 day='Papirus-Light'
@@ -62,46 +252,70 @@ enabled=true
 night='Papirus-Dark'
 
 [nightthemeswitcher/shell-variants]
-day='WhiteSur-light-red'
-manual=true
-night='WhiteSur-dark-red'
+day='Colloid-Pink-Light'
+enabled=true
+night='Colloid-Pink-Dark'
 
 [nightthemeswitcher/time]
-always-enable-ondemand=true
-manual-time-source=true
+manual-schedule=true
 nightthemeswitcher-ondemand-keybinding=['<Shift><Super>t']
-ondemand-button-placement='none'
-ondemand-time='night'
-schedule-sunrise=7.0
-schedule-sunset=17.5
-time-source='schedule'
+sunrise=8.0
+sunset=17.0
 
 [pop-shell]
+activate-launcher=['<Super>backslash']
+active-hint=true
+active-hint-border-radius=uint32 20
 focus-down=['<Super>Down']
-focus-left=['<Super>Left', '<Super>KP_Left']
-focus-right=['<Super>Right', '<Super>KP_Right']
+focus-left=['<Super>Left']
+focus-right=['<Super>Right']
 focus-up=['<Super>Up']
-pop-monitor-left=['<Shift><Super>Left']
-pop-monitor-right=['<Shift><Super>Right']
-pop-workspace-down=['<Shift><Super>Down']
-pop-workspace-up=['<Shift><Super>Up']
-show-title=true
+gap-inner=uint32 2
+gap-outer=uint32 2
+hint-color-rgba='rgb(236,64,122)'
+pop-monitor-down=@as []
+pop-monitor-left=@as []
+pop-monitor-right=@as []
+pop-monitor-up=@as []
+pop-workspace-down=@as []
+pop-workspace-up=@as []
 tile-by-default=true
 
-[sound-output-device-chooser]
-hide-menu-icons=false
-icon-theme='colored'
-ports-settings='{"version":3,"ports":[{"human_name":"HDMI / DisplayPort","name":"hdmi-output-0","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 2","name":"hdmi-output-1","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 2 - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 3","name":"hdmi-output-2","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 3 - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 4","name":"hdmi-output-3","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 4 - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 5","name":"hdmi-output-4","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 5 - Navi 10 HDMI Audio"},{"human_name":"HDMI / DisplayPort 6","name":"hdmi-output-5","display_option":2,"card_name":"alsa_card.pci-0000_28_00.1","card_description":"Navi 10 HDMI Audio","display_name":"HDMI / DisplayPort 6 - Navi 10 HDMI Audio"}]}'
+[quick-settings-avatar]
+is-avatar-on-left=true
+
+[rounded-window-corners]
+black-list=@as []
+custom-rounded-corner-settings=@a{sv} {}
+enable-preferences-entry=true
+focused-shadow={'vertical_offset': 4, 'horizontal_offset': 0, 'blur_offset': 28, 'spread_radius': 4, 'opacity': 60}
+global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 17>, 'smoothing': <uint32 0>, 'enabled': <true>}
+settings-version=uint32 5
+skip-libhandy-app=true
+tweak-kitty-terminal=false
+unfocused-shadow={'vertical_offset': 2, 'horizontal_offset': 0, 'blur_offset': 12, 'spread_radius': -1, 'opacity': 65}
+
+[search-light]
+blur-background=true
+blur-brightness=0.59999999999999998
+blur-sigma=30.0
+border-radius=3.0
+border-thickness=1
+entry-font-size=0
+font-size=1
+monitor-count=1
+popup-at-cursor-monitor=true
+scale-height=0.17999999999999999
+scale-width=0.17999999999999999
+shortcut-search=['<Control>space']
 
 [user-theme]
-name='WhiteSur-dark-red'
+name='Colloid-Pink-Dark'
 
 [vitals]
-fixed-widths=false
 hide-zeros=true
-hot-sensors=['_processor_average_', '_temperature_tctl_', '__temperature_avg__', '_memory_usage_']
+hot-sensors=['_memory_usage_', '_processor_usage_', '_temperature_k10temp_tctl_', '_temperature_amdgpu_edge_']
 show-fan=false
 show-network=true
-show-storage=false
-show-system=false
+show-system=true
 use-higher-precision=false

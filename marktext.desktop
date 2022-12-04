@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=MarkText
+Comment=Next generation markdown editor
+Exec=/usr/lib/marktext/marktext --no-gpu --enable-features=UseOzonePlatform --ozone-platform=wayland  %F
+Terminal=false
+Type=Application
+Icon=marktext
+Categories=Office;TextEditor;Utility;
+MimeType=text/markdown;
+Keywords=marktext;
+StartupWMClass=marktext
+Actions=NewWindow;
+
+[Desktop Action NewWindow]
+Name=New Window
+Exec=/usr/lib/marktext/marktext --no-gpu --enable-features=UseOzonePlatform --ozone-platform=wayland  %F
+Icon=marktext

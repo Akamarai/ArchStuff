@@ -1,4 +1,4 @@
-[custom0]
+[/]
 binding='<Shift><Super>Return'
-command='gnome-terminal'
-name='Terminal'
+command='alacritty'
+name='Alacritty'
