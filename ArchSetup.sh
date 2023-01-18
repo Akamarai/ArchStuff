@@ -41,7 +41,7 @@ echo "Installing packages..."
 #Steam pkg need [multilib] repository uncommented in /etc/pacman.conf
 	sleep 2s
 		sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
-		sudo pacman -S bat micro git firefox papirus-icon-theme wl-clipboard bash-completion ttf-roboto ttf-ubuntu-font-family ttf-jetbrains-mono alacritty neofetch pigz lbzip2  gnome-boxes linux-zen linux-zen-headers linux-headers piper gufw ibva-mesa-driver mesa-vdpau powertop htop s-tui os-prober reflector obsidian steam discord os-prober ntfs-3g
+		sudo pacman -S bat micro git firefox papirus-icon-theme wl-clipboard bash-completion ttf-roboto ttf-ubuntu-font-family ttf-jetbrains-mono alacritty neofetch pigz lbzip2  gnome-boxes linux-zen linux-zen-headers linux-headers piper gufw ibva-mesa-driver mesa-vdpau powertop htop s-tui os-prober reflector obsidian steam discord os-prober ntfs-3g texlive-core texlive-latexextra texlive-fontsextra texlive-science texlive-bin text-engine
 	
 echo "Tuning system..."
 #USARE : sed -i 's/riga da canellare/riga da aggiungere/' path/to/file
